@@ -1,2 +1,2 @@
 # farm-simulator
-Java farming game with OOP Principle 
+Java farming simulation game demonstrating OOP principles
