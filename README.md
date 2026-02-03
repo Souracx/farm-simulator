@@ -1,17 +1,53 @@
-# 🌾 Farm Simulator
+# Farm Simulator (Java)
 
-A Java-based farming simulation game with seasonal gameplay and dual interfaces (console and GUI).
+A Java-based farming simulation project designed to demonstrate strong **Object-Oriented Programming (OOP)** principles and simulation-based system design.
 
-## 📋 Overview
+The game models crops, soil, seasons, and economy using a **tick-based simulation**, where the farm evolves over time rather than relying on scripted logic.
 
-Farm Simulator is a strategic farming game where players manage crops, balance resources, and optimize their farming efficiency across changing seasons. Built to demonstrate object-oriented programming principles and clean code practices.
+---
 
-## ✨ Features
+## Features
+- Multiple crop types (Carrot, Grain, Apple, Corn)
+- Seasonal system (Spring, Summer, Fall, Winter)
+- Grid-based farm world
+- Tick-based crop growth and aging
+- Economy with planting costs and harvest profit
+- Gameplay statistics tracking
+- Save and load game state
+- Console-based gameplay (extensible to GUI)
 
-- **4 Crop Types** - Apples, Grain, Carrots, and Corn with unique growth rates
-- **Seasonal System** - Spring, Summer, Fall, Winter affecting crop growth
-- **Field Management** - 10x5 grid with tilling, planting, and harvesting
-- **Statistics Tracking** - Monitor crops planted, harvested, and profit
-- **Achievement System** - Unlock achievements as you play
-- **Save/Load System** - Save your progress
-- **Dual Interface** - Console mode and JavaFX GUI
+---
+
+## Core Concepts Used
+- Object-Oriented Design (OOP)
+- Abstraction and Inheritance
+- Polymorphism
+- State-driven simulation
+- Separation of concerns
+- Configuration-driven design
+- File I/O (persistence)
+
+---
+
+## How It Works
+- The game runs in discrete time steps (ticks)
+- Each tick:
+  - Ages all items on the field
+  - Updates crop growth or death
+  - Advances seasons when required
+- Crops and environment objects share a common `Item` base class, making the system easy to extend.
+
+---
+
+## Installation & Environment Setup
+
+### Requirements
+- Java Development Kit (JDK) 17 or later
+- Java compiler (`javac`)
+- Command-line terminal
+- Git (optional, for cloning)
+
+Verify Java installation:
+```bash
+java --version
+javac --version
